@@ -14,4 +14,8 @@ publishing {
 
 dependencies {
 
+    def applicationDependencies = rootProject.ext.mainApplication
+
+
+    implementation applicationDependencies.constraintLayout
 }

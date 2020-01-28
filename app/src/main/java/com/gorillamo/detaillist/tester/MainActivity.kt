@@ -5,6 +5,7 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.gorillamo.ui.detailview.DetailListViewFragment
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -14,6 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        supportFragmentManager.beginTransaction()
+            .add(R.id.container,DetailListViewFragment())
+            .commit()
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
