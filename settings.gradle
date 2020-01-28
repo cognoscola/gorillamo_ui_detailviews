@@ -1,0 +1,2 @@
+include ':app', ':detailviews'
+rootProject.name='gorillamo_detaillist'
