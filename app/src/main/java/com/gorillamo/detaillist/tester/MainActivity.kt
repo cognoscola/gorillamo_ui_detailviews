@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         supportFragmentManager.beginTransaction()
-            .add(R.id.container,DetailListViewFragment())
+            .add(R.id.container,DetailListViewFragment.Instance(arrayOf("Yo yo")))
             .commit()
 
         fab.setOnClickListener { view ->

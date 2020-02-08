@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">detailview</string>
     <string name="add_button">Add</string>
+    <string name="add_button_detail">Add Detail</string>
+
+    <string name="history_hint">Write some detail here</string>
 </resources>

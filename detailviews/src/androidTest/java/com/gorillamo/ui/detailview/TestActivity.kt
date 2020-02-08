@@ -11,7 +11,7 @@ class TestActivity :AppCompatActivity(){
 
 
         supportFragmentManager.beginTransaction()
-            .add(R.id.detail_list,DetailListViewFragment())
+            .add(containerId,DetailListViewFragment.Instance(testInput!!))
             .commit()
     }
 
@@ -19,6 +19,8 @@ class TestActivity :AppCompatActivity(){
 
     companion object{
 
+        var testInput:Array<String>? = null
+        var containerId = 0
         var layout = 0
 
     }
